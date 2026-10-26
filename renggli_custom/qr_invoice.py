@@ -181,7 +181,6 @@ def get_invoice_with_qr_pdf(name):
     invoice_pdf = frappe.get_print(
         "Sales Invoice",
         name,
-        print_format="Rechnung klein",
         as_pdf=True,
         no_letterhead=0,
     )
